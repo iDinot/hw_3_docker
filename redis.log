@@ -1,0 +1,201 @@
+app-1  | 2026-11-20 13:38:39,221 listening port=8000 storage=redis
+redis-1  | 1:C 20 Nov 2026 13:38:33.184 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+redis-1  | 1:C 20 Nov 2026 13:38:33.185 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+redis-1  | 1:C 20 Nov 2026 13:38:33.185 * Redis version=7.4.12, bits=64, commit=00000000, modified=0, pid=1, just started
+app-1    | 2026-11-20 13:38:44,082 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-20 13:38:49,234 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-20 13:38:54,384 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-20 13:38:59,536 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-20 13:39:01,947 http 172.18.0.1 "GET / HTTP/1.1" 200 -
+app-1    | 2026-11-20 13:39:04,708 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-20 13:39:09,870 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-20 13:39:15,035 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-20 13:39:20,196 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-20 13:39:25,346 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+redis-1  | 1:C 20 Nov 2026 13:38:33.185 * Configuration loaded
+redis-1  | 1:M 20 Nov 2026 13:38:33.185 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+redis-1  | 1:M 20 Nov 2026 13:38:33.185 * monotonic clock: POSIX clock_gettime
+redis-1  | 1:M 20 Nov 2026 13:38:33.187 * Running mode=standalone, port=6379.
+redis-1  | 1:M 20 Nov 2026 13:38:33.188 * Server initialized
+redis-1  | 1:M 20 Nov 2026 13:38:33.189 * Reading RDB base file on AOF loading...
+redis-1  | 1:M 20 Nov 2026 13:38:33.189 * Loading RDB produced by version 7.4.12
+redis-1  | 1:M 20 Nov 2026 13:38:33.189 * RDB age 5693 seconds
+redis-1  | 1:M 20 Nov 2026 13:38:33.189 * RDB memory usage when created 0.90 Mb
+redis-1  | 1:M 20 Nov 2026 13:38:33.189 * RDB is base AOF
+redis-1  | 1:M 20 Nov 2026 13:38:33.189 * Done loading RDB, keys loaded: 0, keys expired: 0.
+redis-1  | 1:M 20 Nov 2026 13:38:33.189 * DB loaded from base file appendonly.aof.1.base.rdb: 0.001 seconds
+redis-1  | 1:M 20 Nov 2026 13:38:33.190 * DB loaded from incr file appendonly.aof.1.incr.aof: 0.000 seconds
+redis-1  | 1:M 20 Nov 2026 13:38:33.190 * DB loaded from append only file: 0.001 seconds
+redis-1  | 1:M 20 Nov 2026 13:38:33.190 * Opening AOF incr file appendonly.aof.1.incr.aof on server start
+redis-1  | 1:M 20 Nov 2026 13:38:33.190 * Ready to accept connections tcp
+redis-1  | 1:signal-handler (1795182041) Received SIGTERM scheduling shutdown...
+redis-1  | 1:M 20 Nov 2026 13:40:41.515 * User requested shutdown...
+redis-1  | 1:M 20 Nov 2026 13:40:41.515 * Calling fsync() on the AOF file.
+redis-1  | 1:M 20 Nov 2026 13:40:41.519 * Saving the final RDB snapshot before exiting.
+redis-1  | 1:M 20 Nov 2026 13:40:41.526 * DB saved on disk
+redis-1  | 1:M 20 Nov 2026 13:40:41.526 # Redis is now ready to exit, bye bye...
+redis-1  | 1:C 20 Nov 2026 13:44:15.977 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+redis-1  | 1:C 20 Nov 2026 13:44:15.977 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+redis-1  | 1:C 20 Nov 2026 13:44:15.977 * Redis version=7.4.12, bits=64, commit=00000000, modified=0, pid=1, just started
+redis-1  | 1:C 20 Nov 2026 13:44:15.977 * Configuration loaded
+redis-1  | 1:M 20 Nov 2026 13:44:15.977 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+redis-1  | 1:M 20 Nov 2026 13:44:15.977 * monotonic clock: POSIX clock_gettime
+redis-1  | 1:M 20 Nov 2026 13:44:15.979 * Running mode=standalone, port=6379.
+redis-1  | 1:M 20 Nov 2026 13:44:15.979 * Server initialized
+redis-1  | 1:M 20 Nov 2026 13:44:15.979 * Reading RDB base file on AOF loading...
+redis-1  | 1:M 20 Nov 2026 13:44:15.979 * Loading RDB produced by version 7.4.12
+redis-1  | 1:M 20 Nov 2026 13:44:15.979 * RDB age 6035 seconds
+redis-1  | 1:M 20 Nov 2026 13:44:15.979 * RDB memory usage when created 0.90 Mb
+redis-1  | 1:M 20 Nov 2026 13:44:15.979 * RDB is base AOF
+app-1    | 2026-11-20 13:39:30,499 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-20 13:39:35,665 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-20 13:39:40,830 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-20 13:39:45,983 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-20 13:39:51,145 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-20 13:39:56,299 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-20 13:40:01,445 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+redis-1  | 1:M 20 Nov 2026 13:44:15.979 * Done loading RDB, keys loaded: 0, keys expired: 0.
+app-1    | 2026-11-20 13:40:06,603 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+redis-1  | 1:M 20 Nov 2026 13:44:15.979 * DB loaded from base file appendonly.aof.1.base.rdb: 0.000 seconds
+redis-1  | 1:M 20 Nov 2026 13:44:15.979 * DB loaded from incr file appendonly.aof.1.incr.aof: 0.000 seconds
+redis-1  | 1:M 20 Nov 2026 13:44:15.979 * DB loaded from append only file: 0.000 seconds
+redis-1  | 1:M 20 Nov 2026 13:44:15.979 * Opening AOF incr file appendonly.aof.1.incr.aof on server start
+redis-1  | 1:M 20 Nov 2026 13:44:15.979 * Ready to accept connections tcp
+app-1    | 2026-11-20 13:40:11,763 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-20 13:40:16,914 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-20 13:40:22,063 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-20 13:40:27,225 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-20 13:40:32,383 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-20 13:40:37,538 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-20 13:40:42,708 storage_unavailable: ConnectionError
+app-1    | 2026-11-20 13:40:42,708 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-20 13:40:46,420 http 172.18.0.1 "GET /healthz HTTP/1.1" 200 -
+app-1    | 2026-11-20 13:40:47,888 storage_unavailable: ConnectionError
+app-1    | 2026-11-20 13:40:47,888 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-20 13:40:51,430 storage_unavailable: ConnectionError
+app-1    | 2026-11-20 13:40:51,430 http 172.18.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-20 13:40:53,056 storage_unavailable: ConnectionError
+app-1    | 2026-11-20 13:40:53,056 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-20 13:40:58,241 storage_unavailable: ConnectionError
+app-1    | 2026-11-20 13:40:58,242 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-20 13:41:01,142 storage_unavailable: ConnectionError
+app-1    | 2026-11-20 13:41:01,142 http 172.18.0.1 "POST /increment HTTP/1.1" 503 -
+app-1    | 2026-11-20 13:41:03,406 storage_unavailable: ConnectionError
+app-1    | 2026-11-20 13:41:03,406 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-20 13:41:08,569 storage_unavailable: ConnectionError
+app-1    | 2026-11-20 13:41:08,569 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-20 13:41:13,739 storage_unavailable: ConnectionError
+app-1    | 2026-11-20 13:41:13,739 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-20 13:41:18,910 storage_unavailable: ConnectionError
+app-1    | 2026-11-20 13:41:18,910 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-20 13:41:24,091 storage_unavailable: ConnectionError
+app-1    | 2026-11-20 13:41:24,091 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-20 13:41:29,269 storage_unavailable: ConnectionError
+app-1    | 2026-11-20 13:41:29,269 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-20 13:41:34,440 storage_unavailable: ConnectionError
+app-1    | 2026-11-20 13:41:34,440 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-20 13:41:39,607 storage_unavailable: ConnectionError
+app-1    | 2026-11-20 13:41:39,607 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-20 13:41:44,785 storage_unavailable: ConnectionError
+app-1    | 2026-11-20 13:41:44,785 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-20 13:41:48,424 http 172.18.0.1 "GET /healthz HTTP/1.1" 200 -
+app-1    | 2026-11-20 13:41:48,443 storage_unavailable: ConnectionError
+app-1    | 2026-11-20 13:41:48,444 http 172.18.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-20 13:41:49,954 storage_unavailable: ConnectionError
+app-1    | 2026-11-20 13:41:49,955 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-20 13:41:55,129 storage_unavailable: ConnectionError
+app-1    | 2026-11-20 13:41:55,129 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-20 13:42:00,292 storage_unavailable: ConnectionError
+app-1    | 2026-11-20 13:42:00,292 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-20 13:42:05,453 storage_unavailable: ConnectionError
+app-1    | 2026-11-20 13:42:05,453 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-20 13:42:10,621 storage_unavailable: ConnectionError
+app-1    | 2026-11-20 13:42:10,621 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-20 13:42:15,797 storage_unavailable: ConnectionError
+app-1    | 2026-11-20 13:42:15,797 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-20 13:42:20,962 storage_unavailable: ConnectionError
+app-1    | 2026-11-20 13:42:20,962 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-20 13:42:26,127 storage_unavailable: ConnectionError
+app-1    | 2026-11-20 13:42:26,127 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-20 13:42:31,297 storage_unavailable: ConnectionError
+app-1    | 2026-11-20 13:42:31,298 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-20 13:42:36,470 storage_unavailable: ConnectionError
+app-1    | 2026-11-20 13:42:36,470 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-20 13:42:41,637 storage_unavailable: ConnectionError
+app-1    | 2026-11-20 13:42:41,637 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-20 13:42:46,810 storage_unavailable: ConnectionError
+app-1    | 2026-11-20 13:42:46,810 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-20 13:42:51,974 storage_unavailable: ConnectionError
+app-1    | 2026-11-20 13:42:51,975 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-20 13:42:57,137 storage_unavailable: ConnectionError
+app-1    | 2026-11-20 13:42:57,137 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-20 13:43:02,298 storage_unavailable: ConnectionError
+app-1    | 2026-11-20 13:43:02,299 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-20 13:43:07,464 storage_unavailable: ConnectionError
+app-1    | 2026-11-20 13:43:07,464 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-20 13:43:12,628 storage_unavailable: ConnectionError
+app-1    | 2026-11-20 13:43:12,629 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-20 13:43:17,800 storage_unavailable: ConnectionError
+app-1    | 2026-11-20 13:43:17,801 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-20 13:43:22,972 storage_unavailable: ConnectionError
+app-1    | 2026-11-20 13:43:22,973 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-20 13:43:28,144 storage_unavailable: ConnectionError
+app-1    | 2026-11-20 13:43:28,144 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-20 13:43:33,320 storage_unavailable: ConnectionError
+app-1    | 2026-11-20 13:43:33,321 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-20 13:43:38,488 storage_unavailable: ConnectionError
+app-1    | 2026-11-20 13:43:38,488 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-20 13:43:43,660 storage_unavailable: ConnectionError
+app-1    | 2026-11-20 13:43:43,661 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-20 13:43:48,854 storage_unavailable: ConnectionError
+app-1    | 2026-11-20 13:43:48,854 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-20 13:43:54,027 storage_unavailable: ConnectionError
+app-1    | 2026-11-20 13:43:54,027 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-20 13:43:59,201 storage_unavailable: ConnectionError
+app-1    | 2026-11-20 13:43:59,201 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-20 13:44:04,381 storage_unavailable: ConnectionError
+app-1    | 2026-11-20 13:44:04,382 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-20 13:44:09,547 storage_unavailable: ConnectionError
+app-1    | 2026-11-20 13:44:09,547 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-20 13:44:14,727 storage_unavailable: ConnectionError
+app-1    | 2026-11-20 13:44:14,727 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-20 13:44:19,898 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-20 13:44:25,059 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-20 13:44:30,227 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-20 13:44:35,386 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-20 13:44:37,218 http 172.18.0.1 "GET / HTTP/1.1" 200 -
+app-1    | 2026-11-20 13:44:40,569 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-20 13:44:45,747 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-20 13:44:50,914 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-20 13:44:51,378 http 172.18.0.1 "POST /increment HTTP/1.1" 200 -
+app-1    | 2026-11-20 13:44:56,069 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-20 13:45:01,234 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-20 13:45:06,415 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-20 13:45:11,576 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-20 13:45:16,726 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-20 13:45:21,892 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-20 13:45:27,051 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-20 13:45:28,036 http 172.18.0.1 "GET / HTTP/1.1" 200 -
+app-1    | 2026-11-20 13:45:28,167 http 172.18.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-20 13:45:32,210 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-20 13:45:37,361 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-20 13:45:42,523 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-20 13:45:47,687 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-20 13:45:52,840 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-20 13:45:58,006 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-20 13:46:03,179 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-20 13:46:08,343 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-20 13:46:13,501 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-20 13:46:18,663 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-20 13:46:23,824 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-20 13:46:28,987 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-20 13:46:34,153 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-20 13:46:39,313 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-20 13:46:44,472 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-20 13:46:48,325 http 172.18.0.1 "GET / HTTP/1.1" 200 -
+app-1    | 2026-11-20 13:46:49,636 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-20 13:46:54,794 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-20 13:46:59,964 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-20 13:47:05,123 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-20 13:47:10,277 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-20 13:47:15,443 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -

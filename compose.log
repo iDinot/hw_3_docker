@@ -1,0 +1,51 @@
+// до пересоздания
+
+$ docker compose up -d
+ Container hw_3_template-app-1 Starting 
+ Container hw_3_template-app-1 Started
+
+$ curl --noproxy '*' -fsS --max-time 5 http://127.0.0.1:8080/
+{"greeting": "Привет из Docker Compose!", "count": 2, "hostname": "fa429f3810bb", "storage": "sqlite"}
+
+контейнер: fa429f3810bb
+
+$ docker compose logs --no-color app
+app-1  | 2026-11-19 11:11:16,015 listening port=8000 storage=sqlite
+app-1  | 2026-11-19 11:11:16,424 http 172.18.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1  | 2026-11-19 11:11:16,428 http 172.18.0.1 "GET / HTTP/1.1" 200 -
+app-1  | 2026-11-19 21:01:12,030 listening port=8000 storage=sqlite
+app-1  | 2026-11-19 21:01:12,485 http 172.18.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1  | 2026-11-19 21:01:12,557 http 172.18.0.1 "GET / HTTP/1.1" 200 -
+
+// пересоздание без удаления volume
+
+$ docker compose down
+ Container hw_3_template-app-1 Stopping 
+ Container hw_3_template-app-1 Stopped 
+ Container hw_3_template-app-1 Removing 
+ Container hw_3_template-app-1 Removed 
+ Network hw_3_template_default Removing 
+ Network hw_3_template_default Removed
+
+$ docker compose up -d
+ Network hw_3_template_default Creating 
+ Network hw_3_template_default Created 
+ Container hw_3_template-app-1 Creating 
+ Container hw_3_template-app-1 Created 
+ Container hw_3_template-app-1 Starting 
+ Container hw_3_template-app-1 Started
+
+// после пересоздания
+
+$ curl --noproxy '*' -fsS --max-time 5 http://127.0.0.1:8080/
+{"greeting": "Привет из Docker Compose!", "count": 2, "hostname": "78dd06d8117c", "storage": "sqlite"}
+
+контейнер: 78dd06d8117c
+
+$ docker compose logs --no-color app
+app-1  | 2026-11-19 21:01:23,566 listening port=8000 storage=sqlite
+app-1  | 2026-11-19 21:01:24,046 http 172.18.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1  | 2026-11-19 21:01:24,122 http 172.18.0.1 "GET / HTTP/1.1" 200 -
+
+счётчик сохранился: 2 -> 2
+volume: hw_3_template_counter-data
